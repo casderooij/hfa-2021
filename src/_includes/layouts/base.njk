@@ -1,0 +1,20 @@
+{% include 'partials/head.njk' %}
+
+	<header>
+		<div>
+			<a href="/">
+				<h1>Hema Foundation Accelerator 2021</h1>
+			</a>
+			<h2>Taalvaardigheid in en om het gezin</h2>
+		</div>
+
+		<nav>
+			<a href="/wat">Wat?</a>
+			<a href="/berichten">Berichten</a>
+			<a href="/deelnemers">Deelnemers</a>
+		</nav>
+	</header>
+
+	{{ content | safe }}
+
+{% include 'partials/foot.njk' %}
