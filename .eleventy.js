@@ -1,10 +1,15 @@
 module.exports = (eleventyConfig) => {
-  eleventyConfig;
+  eleventyConfig.addPassthroughCopy('src/assets');
+
+  eleventyConfig.addWatchTarget('./src/scss/');
 
   return {
-    templateFormats: ['md', 'njk', 'html'],
     dir: {
       input: 'src',
+      output: 'public',
     },
+    templateFormats: ['md', 'njk', 'html'],
+    markdownTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
   };
 };

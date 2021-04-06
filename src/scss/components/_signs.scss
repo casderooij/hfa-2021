@@ -1,0 +1,38 @@
+.sign {
+  display: inline-block;
+  border: 3px double #000;
+  border-top: 0px;
+  border-bottom: 0px;
+  // Leg height
+  padding-bottom: 1.25rem;
+
+  & * {
+    padding: 0.5rem;
+    margin: 0 -0.75rem;
+    position: relative;
+    top: 0.25rem;
+    background: #fff;
+    border: 1px solid #000;
+  }
+}
+
+.sign--to-left-sm {
+  transform: skew(0, 8deg);
+}
+.sign--to-right-sm {
+  transform: skew(0, -8deg);
+}
+
+.sign--to-left-md {
+  transform: skew(0, 14deg);
+}
+.sign--to-right-md {
+  transform: skew(0, -14deg);
+}
+
+.sign--to-left-lg {
+  transform: skew(0, 24deg);
+}
+.sign--to-right-lg {
+  transform: skew(0, -24deg);
+}

@@ -1,1 +1,1 @@
-# Hema Foundation Accelerator 2021 website!
+# Hema Foundation Accelerator 2021 website

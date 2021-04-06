@@ -1,15 +1,28 @@
 {
   "name": "hfa-2021",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hema Foundation Accelerator 2021 website",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "watch:sass": "sass --no-source-map --watch src/scss:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass --no-source-map src/scss:public/css",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass build:eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.8.3",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.11",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
   }
 }

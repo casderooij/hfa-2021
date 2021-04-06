@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Wie?
+title: Info
 ---
 
-### Dit doen we
+### Info
